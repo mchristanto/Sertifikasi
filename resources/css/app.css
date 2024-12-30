@@ -1,0 +1,340 @@
+/* Global Styles */
+:root {
+  --body-color: #282828;
+  --primary-color: #442e2b;
+  --secondary-color: #39100b;
+  --text-dark: #333;
+  --text-light: #FFF;
+  --font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--body-color);
+  color: var(--text-dark);
+  font-family: var(--font-family);
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+}
+
+.container {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #9b8e79;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titlebar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.titlebar h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px; /* Adds space below the title */
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3D5300;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+  background-color: #0056b3;
+}
+table {
+  width: 100%;
+  border: 1px solid #e4e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e4e7eb;
+}
+
+th {
+  background-color: #f4f6f9;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+td {
+  color: #555;
+}
+
+/* Row Hover Effect */
+tr:hover {
+  background-color: #f0f8ff;
+}
+
+/* Form Styles */
+.status-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-container {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Spacing between checkbox and label */
+}
+
+.status-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.status-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.status-btn:hover {
+  background-color: #638C6D;
+}
+
+label {
+  color: var(--text-dark);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* No Records Found */
+.no-records {
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Button Styles */
+.btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn i {
+  margin-right: 5px;
+}
+
+/* Edit Button */
+.btn-success {
+  background-color: #1F4529;
+  color: white;
+  border: none;
+  width: 100px; /* Ensure Edit button size is consistent */
+  height: 40px;
+}
+
+.btn-success:hover {
+  background-color: #47663B;
+}
+
+.btn-primary {
+  background-color: #142f1b;
+  color: white;
+  border: none;
+  width: 100px; /* Ensure Edit button size is consistent */
+  height: 40px;
+}
+
+.btn-primary:hover {
+  background-color: #658f54;
+}
+
+/* Delete Button */
+.btn-danger {
+  background-color: #8b222c;
+  color: white;
+  border: none;
+  width: 100px; /* Ensure Delete button size is consistent */
+  height: 40px;
+}
+
+.btn-danger:hover {
+  background-color: #c53442;
+}
+
+/* Icons in Buttons */
+.btn-success i {
+  font-size: 16px;
+}
+
+.btn-danger i {
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Image Preview */
+.img-product {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Button */
+.btn-save {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-save:hover {
+  background-color: #218838;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.btn-link {
+  background-color: #FFE31A;
+  color: black;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-link:hover {
+  background-color: #3D5300;
+  color: white;
+}
+
+.searchbar {
+  width: 100%; /* Ensure the searchbar container takes full width */
+  margin-bottom: 20px; /* Optional: Adds space below the search bar */
+}
+
+.searchbar input {
+  width: 100%; /* Makes the input field take the full width of the container */
+  padding: 10px; /* Padding inside the input field */
+  font-size: 1rem; /* Font size for the input text */
+  border: 1px solid #ccc; /* Border for the input field */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+.searchbar input:focus {
+  outline: none; /* Removes the default outline on focus */
+  border-color: #007bff; /* Changes border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adds a shadow effect on focus */
+}
